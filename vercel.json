@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "app/task_api.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app/task_api.py"
+        }
+    ]
+}
